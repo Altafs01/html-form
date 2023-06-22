@@ -6,36 +6,37 @@
     </title>
 </head>
 <body>
-    <h1>
-        personal information
+    <h1 style="font-style: italic">
+        <u>PERSONAL INFORMATION</u>
     </h1>
     <div>
         <form>
-            <label for="Enter Name">Name :</label>
+        <div>
+            <label for="Enter Name"><b>Name :</b></label>
             <input type="text" value="Enter Name" name="Name">
 
             <br>
             <br>
 
-            <label for="Email"> Email :</label>
+            <label for="Email"><b> Email :</b></label>
             <input type="text" value="Enter your email" name="Email"><br>
 
             <br>
 
-            <label for="contact no. "> Contact No. :</label>
+            <label for="contact no. "><b> Contact No. :</b></label>
             <input type="number" value="Enter your number" name="Contact No.">
 
             <br>
             <br>
 
-            <label for="password"> Password :</label>
+            <label for="password"><b> Password :</b></label>
             <input type="password" value="Enter your password" name="password">
+        </div>
 
-            <br>
-            <br>
+            <br><br>
 
             <div>
-                Gender : 
+                <b>Gender :</b> 
                 <label for="Male">Male</label>
                 <input type="radio" name="Gender" value="Male" required>
                 <label for="Female">Female</label>
@@ -43,24 +44,59 @@
             </div>
             <br>
 
-            <div>
-                <h2>
-                    Choose Your Subject
+            <div><hr>
+                <h2 style="font-style: italic;">
+                    <u>CHOOSE YOUR SUBJECT</u>
                 </h2>
                 <label for="math">Math</label>
                 <input type="checkbox" name="Math"  value="Math">
                 <label for="English">English</label>
                 <input type="checkbox" name="English"  value="English">
-                <label for="checkbox">Science</label>
+                <label for="Science">Science</label>
                 <input type="checkbox" name="Science"  value="Science">
                 <br>
                 <br>
-                <label for="checkbox">Bio</label>
+                <label for="Bio">Bio</label>
                 <input type="checkbox" name="Bio" value="Bio">
                 <label for="checkbox">marathi</label>
                 <input type="checkbox" name="marathi" value="marathi">
+                <label for="checkbox">Hindi</label>
+                <input type="checkbox" name="Hindi" value="Hindi"><br><br>
+            </div><hr>
+
+            <div>
+
+            <label for="standard"><b>Choose your class time:</b></label>
+            <select name="std" id="std">
+                <option value="9th std">9:00 am</option>
+                <option value="10th std">11:00 am</option>
+                <option value="11th std">1:00 pm</option>
+            </select>
 
             </div>
+
+            <br><br>
+
+            <div>
+                <label for="Choose file"><b>Choose file :</b></label>
+                <input type="file" value="my files" name="my files">
+            </div>
+
+            <br><br>
+
+            <label for="joining date"><b> Select joining date :</b></label>
+            <input type="date"  value="joining date" name="joining date">
+            <br><br>
+            <hr>
+
+            <label for="Reviews"><b>Reviews Box :</b></label>
+            <textarea value="Reviews Box" name="Reviews Box" rows="10" cols="60">
+                submit your Reviews.....
+            </textarea>
+            <br><br>
+            
+            <input type="button" value="submit" name="submit">
+            
         </form>
     </div>
 </body>
